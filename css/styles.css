@@ -105,8 +105,8 @@ img {
   color: var(--color-text-hero);
 }
 
-
 /*header*/
+
 .header {
   border-bottom: 1px solid var(--background-color-line);
 }
@@ -183,51 +183,55 @@ img {
 }
 
 /*footer*/
+
 .footer {
   background-color: var(--background-color-dark);
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-cont {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
-.ftr-address-cont {
+.footer__container--address {
   margin-right: 70px;
   width: 230px;
 }
+.footer__container--social {
+  margin-right: 93px;
+  width: 206px;
+}
+.footer__container--form {
+display: flex;
+flex-direction: column;
+}
+
 .address {
   margin-top: 20px;
 }
-.item-address {
+.address__item {
   margin-bottom: 9px;
 }
-.item-address:last-child {
+.address__item:last-child {
   margin-bottom: 0;
 }
-.link-address {
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.address__link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   text-decoration: none;
   font-style: normal;
   line-height: calc(24 / 14);
   color: var(--color-text-hero);
 }
-.link-address-cont {
+.address__link--contact {
   color: var(--color-text-adress);
 }
-.link-address:hover,
-.link-address:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--color-text-accent);
 }
 
-.ftr-social-cont {
-  width: 206px;
-  margin-right: 93px;
-}
-.ftr-social-title {
+.footer__container--title {
   margin-bottom: 20px;
 
   color: var(--color-text-hero);
@@ -237,19 +241,17 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.ftr-social {
+.social__list {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   justify-content: center;
 }
-.ftr-link-social {
+.footer__social-link {
   display: block;
   fill: var(--color-text-hero);
 
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   text-decoration: none;
   padding: 12px;
@@ -257,33 +259,26 @@ img {
   border-radius: 50%;
   line-height: 0;
 }
-.ftr-link-social:hover,
-.ftr-link-social:focus {
+.footer__social-link:hover,
+.footer__social-link:focus {
   background-color: var(--background-color-bt-accent);
 }
-
-.icon-social {
+.footer__icon-social {
   width: 20px;
   height: 20px;
 }
-.ftr-form-box {
-  display: flex;
-flex-direction: column;
-}
-.ftr-form {
+
+.footer__form {
   display: flex;
   gap: 12px;
 }
-.ftr-input {
+.footer__form--input {
   display: block;
   padding: 15px 16px;
- 
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
   outline:none;
-
-  transition-property: color, border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 width: 358px;
 height: 50px;
 background-color: transparent;
@@ -291,24 +286,22 @@ border: 1px solid var(--background-color-border);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 border-radius: 4px;
 }
-.ftr-input::placeholder {
+.footer__form--input::placeholder {
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.03em;
     color:var(--color-text-adress);
 }
-.ftr-form-label:focus-within > .ftr-input {
+.footer__form--label:focus-within > .footer__form--input {
   color: var(--background-color-bt-accent);
   border-color: var(--background-color-bt-accent);}
 
-.ftr-form-bt {
+.footer__button {
   display: inline-flex;
   align-items: center;
 padding: 10px 28px;
 
-transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   background-color: var(--background-color-bt-accent);
   color: var(--color-text-hero);
@@ -321,15 +314,14 @@ transition-property: background-color;
   border: none;
   cursor: pointer;
 }
-.icon-ftr-bt {
+.footer__button--icon {
 width: 24px;
 height: 24px;
 margin-left: 10px;
 fill: var(--color-text-hero);
 }
-
-.ftr-form-bt:hover,
-.ftr-form-bt:focus {
+.footer__button:hover,
+.footer__button:focus {
   background-color: var(--background-color-bt-activ);
 }
 
