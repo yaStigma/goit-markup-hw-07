@@ -93,22 +93,24 @@ img {
   line-height: calc(30 / 26);
   text-decoration: none;
 }
-.logo-dark {
+.logo__accent {
+  color: var(--color-text-accent);
+}
+.header__logo {
   margin-right: 93px;
 
   color: var(--color-text-dark);
 }
-.logo-white {
+.footer__logo {
   color: var(--color-text-hero);
 }
-.accent-logo {
-  color: var(--color-text-accent);
-}
+
+
 /*header*/
 .header {
   border-bottom: 1px solid var(--background-color-line);
 }
-.header-cont {
+.header__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -117,20 +119,20 @@ img {
   display: flex;
   align-items: center;
 }
-.list-nav {
+.nav__list {
   display: flex;
 }
-.item-nav {
+.nav__item {
   margin-right: 50px;
 }
-.item-nav:last-child {
+.nav__item:last-child {
   margin-right: 0;
 }
 .list-cont {
   display: flex;
   align-items: center;
 }
-.link-nav {
+.nav__link {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -138,9 +140,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   text-decoration: none;
   color: var(--color-text-topic);
@@ -148,15 +148,19 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
-.link-nav:hover,
-.link-nav:focus {
+.nav__link--contact {
+  flex-direction: row;
+  color: var(--color-text-main);
+}
+.nav__link:hover,
+.nav__link:focus {
   color: var(--color-text-accent);
 }
-.active-nav {
+.nav__link--active {
   color: var(--color-text-accent);
   padding-bottom: 0;
 }
-.active-nav::after {
+.nav__link--active::after {
   content: '';
   width: 106%;
   height: 4px;
@@ -165,33 +169,13 @@ img {
   background-size: contain;
   margin-top: 28px;
 }
-
-.link-cont {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-  text-decoration: none;
-  color: var(--color-text-main);
-  font-weight: 500;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-}
-.link-cont:hover,
-.link-cont:focus {
-  color: var(--color-text-accent);
-}
-.icon-cont-envelope {
+.nav__icon--envelope {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
-.icon-cont-smartphone {
+.nav__icon--smartphone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
