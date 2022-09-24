@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -28,17 +29,19 @@
             ><span class="logo__accent">Web</span>Studio</a
           >
           <ul class="list nav__list">
-            <li class="nav__item"><a class="nav__link" href="./index.html">Студія</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="./index.html">Студія</a>
+            </li>
             <li class="nav__item">
               <a class="nav__link nav__link--active" href="./portfolio.html">Портфоліо</a>
             </li>
             <li class="nav__item"><a class="nav__link" href="#contact">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list header__container">
+        <ul class="list nav__list">
           <li class="nav__item">
             <a class="nav__link nav__link--contact" href="mailto:info@devstudio.com">
-              <svg class="nav__icon--envelope">
+              <svg class="icon--envelope">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -46,7 +49,7 @@
           </li>
           <li class="nav__item">
             <a class="nav__link nav__link--contact" href="tel:+380961111111">
-              <svg class="nav__icon--smartphone">
+              <svg class="icon--smartphone">
                 <use href="./images/icons.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -60,19 +63,19 @@
           <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="list filter">
             <li class="filter__item">
-              <button class="filter__button" type="button">Усі</button>
+              <button class="button--filter" type="button">Усі</button>
             </li>
             <li class="filter__item">
-              <button class="filter__button" type="button">Веб-сайти</button>
+              <button class="button--filter" type="button">Веб-сайти</button>
             </li>
             <li class="filter__item">
-              <button class="filter__button" type="button">Додатки</button>
+              <button class="button--filter" type="button">Додатки</button>
             </li>
             <li class="filter__item">
-              <button class="filter__button" type="button">Дизайн</button>
+              <button class="button--filter" type="button">Дизайн</button>
             </li>
             <li class="filter__item">
-              <button class="filter__button" type="button">Маркетинг</button>
+              <button class="button--filter" type="button">Маркетинг</button>
             </li>
           </ul>
           <ul class="list grid">
