@@ -24,12 +24,14 @@
     <header class="header">
       <div class="container header__container">
         <nav class="nav">
-          <a class="logo header__logo" href="./index.html"
+          <a class="logo logo--header" href="./index.html"
             ><span class="logo__accent">Web</span>Studio</a
           >
           <ul class="list nav__list">
             <li class="nav__item"><a class="nav__link" href="./index.html">Студія</a></li>
-            <li class="nav__item"><a class="nav__link nav__link--active" href="./portfolio.html">Портфоліо</a></li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="./portfolio.html">Портфоліо</a>
+            </li>
             <li class="nav__item"><a class="nav__link" href="#contact">Контакти</a></li>
           </ul>
         </nav>
@@ -45,7 +47,9 @@
           <li class="nav__item">
             <a class="nav__link nav__link--contact" href="tel:+380961111111">
               <svg class="nav__icon--smartphone">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a>
+                <use href="./images/icons.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -297,7 +301,7 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__container--address">
-          <a class="logo footer__logo" href="./index.html"
+          <a class="logo logo--footer" href="./index.html"
             ><span class="logo__accent">Web</span>Studio</a
           >
           <address class="address" id="contact">
@@ -327,15 +331,15 @@
 
         <div class="footer__container--social">
           <p class="footer__container--title">приєднуйтесь</p>
-          <ul class="list social__list">
+          <ul class="list social">
             <li class="social__item">
               <a
                 href="https://www.instagram.com"
-                class="footer__social-link"
+                class="social__link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="footer__icon-social">
+                <svg class="icon--social">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -343,11 +347,11 @@
             <li class="social__item">
               <a
                 href="https://twitter.com"
-                class="footer__social-link"
+                class="social__link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="footer__icon-social">
+                <svg class="icon--social">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
@@ -355,11 +359,11 @@
             <li class="social__item">
               <a
                 href="https://www.facebook.com"
-                class="footer__social-link"
+                class="social__link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="footer__icon-social">
+                <svg class="icon--social">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -367,11 +371,11 @@
             <li class="social__item">
               <a
                 href="https://ua.linkedin.com"
-                class="footer__social-link"
+                class="social__link"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <svg class="footer__icon-social">
+                <svg class="icon--social">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -380,10 +384,10 @@
         </div>
         <div class="footer__container--form">
           <p class="footer__container--title">Підпишіться на розсилку</p>
-          <form class="footer__form">
-            <label class="footer__form--label">
+          <form class="form-ftr">
+            <label class="form-ftr__label">
               <input
-                class="footer__form--input"
+                class="form-ftr__input"
                 type="email"
                 name="email"
                 title="Введіть електронну пошту"
@@ -391,9 +395,9 @@
                 required
               />
             </label>
-            <button class="footer__button" type="submit">
+            <button class="button button--ftr" type="submit">
               Підписатися
-              <svg class="footer__button--icon">
+              <svg class="icon--send">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
